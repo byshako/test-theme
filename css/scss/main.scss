@@ -13,6 +13,11 @@ body{
   background: rgba(#545b62, 0.7);
   &__menu{
     font-size: 25px;
+    &-icon{
+      cursor: pointer;
+      display: inline-block;
+      padding: 10px;
+    }
   }
 }
 .section{
@@ -25,5 +30,24 @@ body{
     text-transform: uppercase;
     color: $text-color;
     margin-top: 20px;
+  }
+}
+.nav{
+  width: 40%;
+  background: #545b62;
+  position: fixed;
+  top: 60px;
+  right: -40%;
+  transition: 300ms linear;
+  &.active{
+    right: 0;
+    transition: 300ms linear;
+  }
+}
+.main-page{
+  transition: 300ms linear;
+  &.active{
+    background: #005cbf;
+    transition: 300ms linear;
   }
 }

@@ -1,3 +1,9 @@
+/* Text syles */
+.text{
+  &--right{
+    text-align: right;
+  }
+}
 .vac{
   align-items: center;
 }

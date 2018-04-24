@@ -9,3 +9,4 @@ LIBS/bootstrap-4.1.0-dist.zip
 .idea/watcherTasks.xml
 .idea/watcherTasks.xml
 .idea/watcherTasks.xml
+*.map
