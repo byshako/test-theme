@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'BPGArialCaps';
+  src: url("../fonts/bpg-arial-caps-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/bpg-arial-caps-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bpg-arial-caps-webfont.woff2") format("woff2"), url("../fonts/bpg-arial-caps-webfont.woff") format("woff"), url("../fonts/bpg-arial-caps-webfont.ttf") format("truetype"), url("../fonts/bpg-arial-caps-webfont.svg#bpg_arial_capsregular") format("svg");
+  /* Legacy iOS */ }
+@font-face {
+  font-family: 'BPGArial';
+  src: url("../fonts/bpg-arial-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/bpg-arial-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bpg-arial-webfont.woff2") format("woff2"), url("../fonts/bpg-arial-webfont.woff") format("woff"), url("../fonts/bpg-arial-webfont.ttf") format("truetype"), url("../fonts/bpg-arial-webfont.svg#bpg_arialregular") format("svg");
+  /* Legacy iOS */ }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block; }
+
+body {
+  color: #333; }
+
+/* Button styles */
+.btn--start {
+  font-family: BPGArialCaps;
+  background: #4e555b;
+  width: 300px;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+  border-radius: 25px;
+  box-shadow: 0 0 25px 3px #000000;
+  margin: 100px auto;
+  color: #f7f7f7; }
+
+/* Text syles */
+
+/*# sourceMappingURL=style.css.map */
