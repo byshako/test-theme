@@ -6,6 +6,7 @@ body{
   height: 60px;
   width: 100%;
   position: fixed;
+  z-index: 999;
   top: 0;
   left: 0;
   display: flex;
@@ -42,12 +43,44 @@ body{
   &.active{
     right: 0;
     transition: 300ms linear;
+    z-index: 3;
   }
 }
 .main-page{
-  transition: 300ms linear;
   &.active{
-    background: #005cbf;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    perspective: 2000px;
+    width: 55%;
+    height: calc(100% - 60px);
+  }
+  &__perspective{
     transition: 300ms linear;
+    &.active{
+      width: 100%;
+      height: 100%;
+      transform: rotateY(45deg) translatex(-15%);
+      box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.5);
+      transition: 300ms linear;
+    }
   }
 }
+
+//.box{
+//  width: 500px;
+//  height: 500px;
+//  box-shadow: 0 0 15px 3px #000;
+//  margin: 100px auto;
+//  perspective: 1200px;
+//  &__content{
+//    width: 100%;
+//    height: 100%;
+//    background: #dedede;
+//    transition: 300ms;
+//    &:hover {
+//      transform: rotateY(45deg);
+//      transition: 300ms;
+//    }
+//  }
+//}
