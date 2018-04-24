@@ -16,5 +16,7 @@
 
 /* Text syles */
 .text{
-	
+	&--right{
+          text-align: right;
+    }
 }

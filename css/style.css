@@ -10,6 +10,9 @@
   /* IE9 Compat Modes */
   src: url("../fonts/bpg-arial-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bpg-arial-webfont.woff2") format("woff2"), url("../fonts/bpg-arial-webfont.woff") format("woff"), url("../fonts/bpg-arial-webfont.ttf") format("truetype"), url("../fonts/bpg-arial-webfont.svg#bpg_arialregular") format("svg");
   /* Legacy iOS */ }
+.vac {
+  align-items: center; }
+
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +26,31 @@ a {
   display: inline-block; }
 
 body {
-  color: #333; }
+  font-family: BPGArial;
+  padding-top: 60px; }
+
+.header {
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  background: rgba(84, 91, 98, 0.7); }
+  .header__menu {
+    font-size: 25px; }
+
+.section {
+  width: 100%;
+  height: 100vh;
+  border-bottom: 2px dotted #005cbf;
+  padding: 15px; }
+  .section__title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+    margin-top: 20px; }
 
 /* Button styles */
 .btn--start {
@@ -39,5 +66,7 @@ body {
   color: #f7f7f7; }
 
 /* Text syles */
+.text--right {
+  text-align: right; }
 
 /*# sourceMappingURL=style.css.map */
