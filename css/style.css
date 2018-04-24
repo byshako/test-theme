@@ -12,7 +12,9 @@
   /* Legacy iOS */ }
 /* Text syles */
 .text--right {
-  text-align: right; }
+  text-align: right !important; }
+.text--center {
+  text-align: center !important; }
 
 .vac {
   align-items: center; }
@@ -31,7 +33,8 @@ a {
 
 body {
   font-family: BPGArial;
-  padding-top: 60px; }
+  padding-top: 60px;
+  background: #fbfbfb; }
 
 .header {
   height: 60px;
@@ -49,17 +52,6 @@ body {
       cursor: pointer;
       display: inline-block;
       padding: 10px; }
-
-.section {
-  width: 100%;
-  height: 100vh;
-  border-bottom: 2px dotted #005cbf;
-  padding: 15px; }
-  .section__title {
-    text-align: center;
-    text-transform: uppercase;
-    color: #333333;
-    margin-top: 20px; }
 
 .nav {
   width: 250px;
@@ -102,18 +94,31 @@ body {
       background: #1c7430;
       transition: 300ms; }
 
+.section {
+  width: 100%;
+  height: 100vh;
+  border-bottom: 2px dotted #005cbf;
+  padding: 15px; }
+  .section__title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+    margin-top: 20px; }
+
 .main-page.active {
   position: fixed;
   left: 0;
   top: 60px;
   perspective: 2000px;
-  width: 55%;
+  width: 80%;
   height: calc(100% - 60px); }
 .main-page__perspective {
-  transition: 300ms linear; }
+  transition: 300ms linear;
+  background: #ffffff; }
   .main-page__perspective.active {
     width: 100%;
     height: 100%;
+    overflow: hidden;
     transform: rotateY(45deg) translatex(-15%);
     box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.3);
     transition: 300ms linear; }
