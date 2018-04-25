@@ -140,6 +140,16 @@ body {
     background: linear-gradient(to bottom right, transparent 50%, #ffffff 51%);
     position: absolute;
     bottom: 0; }
+  .home__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .home__title {
+    color: #f7f7f7;
+    font-size: 48px;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.7); }
 
 /* Button styles */
 
