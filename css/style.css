@@ -19,6 +19,10 @@
 .vac {
   align-items: center; }
 
+.responsive {
+  width: 100%;
+  height: auto; }
+
 /* Droebiti stilebi */
 .just {
   padding: 50px 0; }
@@ -40,7 +44,8 @@ a {
 body {
   font-family: BPGArial;
   padding-top: 60px;
-  background: #fbfbfb; }
+  background: #fbfbfb;
+  color: #333333; }
 
 .header {
   height: 60px;
@@ -108,7 +113,21 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: #333333;
-    margin-top: 20px; }
+    margin: 20px 0 35px 0;
+    position: relative; }
+    .section__title:before, .section__title:after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 2px;
+      width: 250px;
+      background: #fff1e6;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%); }
+    .section__title:after {
+      bottom: -9px;
+      width: 230px; }
 
 .main-page.active {
   position: fixed;
@@ -138,7 +157,7 @@ body {
     content: '';
     display: block;
     width: 100%;
-    height: 100px;
+    height: 70px;
     background: linear-gradient(to bottom right, transparent 50%, #ffffff 51%);
     position: absolute;
     bottom: 0; }
@@ -155,19 +174,31 @@ body {
     text-transform: uppercase; }
   .home__info {
     width: 80%;
-    height: 150px;
-    background: rgba(255, 241, 230, 0.7);
+    min-height: 150px;
+    background: rgba(255, 241, 230, 0.8);
     display: flex;
     align-items: center;
     color: #333333;
-    font-size: 25px;
     text-transform: uppercase;
-    padding: 0 25px;
+    padding: 10px 25px;
     transform: skew(-15deg);
     border-radius: 10px;
     margin-left: 25px; }
-    .home__info div {
-      transform: skew(15deg); }
+    .home__info h2 {
+      transform: skew(15deg);
+      font-size: 25px; }
+
+.about__image {
+  padding: 0 0 25px 25px; }
+  .about__image-img {
+    width: 100%;
+    height: auto;
+    box-shadow: -25px 25px 0 #fff1e6; }
+.about__title {
+  text-transform: uppercase;
+  margin-bottom: 15px; }
+.about__content {
+  line-height: 1.7; }
 
 .footer {
   padding: 30px 0; }

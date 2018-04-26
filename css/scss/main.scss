@@ -2,6 +2,7 @@ body{
   font-family: BPGArial;
   padding-top: 60px;
   background: #fbfbfb;
+  color: $text-color;
 }
 // Header Styles
 .header{
@@ -82,7 +83,23 @@ body{
     text-align: center;
     text-transform: uppercase;
     color: $text-color;
-    margin-top: 20px;
+    margin: 20px 0 35px 0;
+    position: relative;
+    &:before, &:after{
+      content: '';
+      display: block;
+      position: absolute;
+      height: 2px;
+      width: 250px;
+      background: $main-color;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &:after{
+      bottom: -9px;
+      width: 230px;
+    }
   }
 }
 .main-page{
@@ -118,7 +135,7 @@ body{
     content: '';
     display: block;
     width: 100%;
-    height: 100px;
+    height: 70px;
     background: linear-gradient(to bottom right, transparent 50%, #ffffff 51%);
     position: absolute;
     bottom: 0;
@@ -138,20 +155,38 @@ body{
   }
   &__info{
     width: 80%;
-    height: 150px;
-    background: rgba($main-color, .7);
+    min-height: 150px;
+    background: rgba($main-color, .8);
     display: flex;
     align-items: center;
     color: $text-color;
-    font-size: 25px;
     text-transform: uppercase;
-    padding: 0 25px;
+    padding: 10px 25px;
     transform: skew(-15deg);
     border-radius: 10px;
     margin-left: 25px;
-    div{
+    h2{
       transform: skew(15deg);
+      font-size: 25px;
     }
+  }
+}
+// About Us Section Styles
+.about{
+  &__image{
+    padding: 0 0 25px 25px;
+    &-img{
+      width: 100%;
+      height: auto;
+      box-shadow: -25px 25px 0 $main-color;
+    }
+  }
+  &__title{
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  &__content{
+    line-height: 1.7;
   }
 }
 // Footer Styles
