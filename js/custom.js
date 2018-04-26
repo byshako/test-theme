@@ -19,5 +19,11 @@ $(document).ready(function() {
     });
 
     // Text Animation
-
+    $("#maintext").typer({
+        strings: [
+            "isimply dummy text of the printing and typesetting ",
+            "It is a long established fact that a reader will be",
+            "There are many variations of passages of Lorem Ipsum"
+        ]
+    });
 });

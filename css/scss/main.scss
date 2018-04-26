@@ -112,7 +112,8 @@ body{
   position: relative;
   background: url(../images/main-photo.jpg) no-repeat center;
   background-size: cover;
-  min-height: 800px;
+  height: 800px;
+  padding: 0;
   &:after{
     content: '';
     display: block;
@@ -124,15 +125,33 @@ body{
   }
   &__content{
     width: 100%;
-    height: inherit;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   &__title{
-    color: #f7f7f7;
+    color: $main-color;
     font-size: 48px;
-    text-shadow: 0 0 3px rgba(0,0,0,.7);
+    text-shadow: 0 0 10px rgba(0,0,0,.97);
+    text-transform: uppercase;
+  }
+  &__info{
+    width: 80%;
+    height: 150px;
+    background: rgba($main-color, .7);
+    display: flex;
+    align-items: center;
+    color: $text-color;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 0 25px;
+    transform: skew(-15deg);
+    border-radius: 10px;
+    margin-left: 25px;
+    div{
+      transform: skew(15deg);
+    }
   }
 }
 // Footer Styles

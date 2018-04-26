@@ -25,13 +25,6 @@
   .just div {
     margin: 25px 0; }
 
-#txtlzr {
-  font-family: 'Amaranth',sans-serif;
-  margin-top: 20px;
-  font-size: 30px;
-  width: 700px;
-  height: 184px; }
-
 * {
   margin: 0;
   padding: 0;
@@ -139,7 +132,8 @@ body {
   position: relative;
   background: url(../images/main-photo.jpg) no-repeat center;
   background-size: cover;
-  min-height: 800px; }
+  height: 800px;
+  padding: 0; }
   .home:after {
     content: '';
     display: block;
@@ -150,14 +144,30 @@ body {
     bottom: 0; }
   .home__content {
     width: 100%;
-    height: inherit;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center; }
   .home__title {
-    color: #f7f7f7;
+    color: #fff1e6;
     font-size: 48px;
-    text-shadow: 0 0 3px rgba(0, 0, 0, 0.7); }
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.97);
+    text-transform: uppercase; }
+  .home__info {
+    width: 80%;
+    height: 150px;
+    background: rgba(255, 241, 230, 0.7);
+    display: flex;
+    align-items: center;
+    color: #333333;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 0 25px;
+    transform: skew(-15deg);
+    border-radius: 10px;
+    margin-left: 25px; }
+    .home__info div {
+      transform: skew(15deg); }
 
 .footer {
   padding: 30px 0; }
