@@ -172,6 +172,7 @@ body{
 }
 // About Us Section Styles
 .about{
+  margin-bottom: 40px;
   &__image{
     padding: 0 0 25px 25px;
     &-img{
@@ -215,7 +216,7 @@ body{
   &__cover{
     padding: 50px 0;
     padding-bottom: 120px;
-    background: rgba(#000000, .1);
+    background: rgba($text-color, .1);
   }
   &__item{
     background: rgba($main-color, .9);

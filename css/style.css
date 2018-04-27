@@ -187,17 +187,19 @@ body {
       transform: skew(15deg);
       font-size: 25px; }
 
-.about__image {
-  padding: 0 0 25px 25px; }
-  .about__image-img {
-    width: 100%;
-    height: auto;
-    box-shadow: -25px 25px 0 #fff1e6; }
-.about__title {
-  text-transform: uppercase;
-  margin-bottom: 15px; }
-.about__content {
-  line-height: 1.7; }
+.about {
+  margin-bottom: 40px; }
+  .about__image {
+    padding: 0 0 25px 25px; }
+    .about__image-img {
+      width: 100%;
+      height: auto;
+      box-shadow: -25px 25px 0 #fff1e6; }
+  .about__title {
+    text-transform: uppercase;
+    margin-bottom: 15px; }
+  .about__content {
+    line-height: 1.7; }
 
 .services {
   text-align: center;
@@ -222,7 +224,7 @@ body {
   .services__cover {
     padding: 50px 0;
     padding-bottom: 120px;
-    background: rgba(0, 0, 0, 0.1); }
+    background: rgba(51, 51, 51, 0.1); }
   .services__item {
     background: rgba(255, 241, 230, 0.9);
     padding: 15px;
