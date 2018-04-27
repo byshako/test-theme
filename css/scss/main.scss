@@ -191,11 +191,10 @@ body{
 // Services Section Styles
 .services{
   text-align: center;
-  padding: 50px 0;
-  padding-bottom: 100px;
   background: url(../images/services.jpg) no-repeat center bottom;
   background-size: cover;
   position: relative;
+  padding: 0;
   &:before, &:after{
     content: '';
     display: block;
@@ -205,14 +204,23 @@ body{
     position: absolute;
     top: 0;
   }
+  &:before{
+    transform: rotateY(180deg);
+  }
   &:after{
     background: linear-gradient(to bottom right, transparent 50%, #ffffff 51%);
     bottom: 0;
     top: auto;
   }
+  &__cover{
+    padding: 50px 0;
+    padding-bottom: 100px;
+    background: rgba(#000000, .1);
+  }
   &__item{
     background: rgba($main-color, .9);
     padding: 10px;
+    margin-bottom: 10px;
     &-logo{
       font-size: 75px;
     }
