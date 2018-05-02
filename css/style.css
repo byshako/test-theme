@@ -150,6 +150,7 @@ body {
   position: relative;
   background: url(../images/main-photo.jpg) no-repeat center;
   background-size: cover;
+  background-attachment: fixed;
   height: 800px;
   padding: 0; }
   .home:after {
@@ -205,6 +206,7 @@ body {
   text-align: center;
   background: url(../images/services.jpg) no-repeat center bottom;
   background-size: cover;
+  background-attachment: fixed;
   position: relative;
   padding: 0; }
   .services:before, .services:after {
