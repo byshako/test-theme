@@ -26,4 +26,32 @@ $(document).ready(function() {
             "There are many variations of passages of Lorem Ipsum"
         ]
     });
+
+    //POPUP
+    $('.gallery__item').magnificPopup({
+        items: [
+            {
+                src: 'images/gallery/1.jpg'
+            },
+            {
+                src: 'images/gallery/2.jpg'
+            },
+            {
+                src: 'images/gallery/3.jpg'
+            },
+            {
+                src: 'images/gallery/4.jpg'
+            },
+            {
+                src: 'images/gallery/5.jpg'
+            },
+            {
+                src: 'images/gallery/6.jpg'
+            },
+        ],
+        gallery: {
+            enabled: true
+        },
+        type: 'image',
+    });
 });

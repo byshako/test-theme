@@ -224,6 +224,7 @@ body{
     background: rgba($main-color, .9);
     padding: 15px;
     margin-bottom: 10px;
+    height: calc(100% - 10px);
     &-logo{
       font-size: 75px;
     }
@@ -342,8 +343,23 @@ body{
     color: $main-color;
   }
   &__item{
+    height: calc(100% - 10px);
     padding: 15px;
     background: $main-color;
+    margin-bottom: 10px;
+    &-name{
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+    &-title{
+      font-size: 12px;
+      font-weight: 100;
+      text-align: center;
+      letter-spacing: 3px;
+      margin-bottom: 15px;
+    }
   }
 }
 // Footer Styles

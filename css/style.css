@@ -26,6 +26,15 @@
 .pos-r {
   position: relative; }
 
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 40px;
+  width: auto;
+  max-width: 200px;
+  margin: 20px auto;
+  text-align: center; }
+
 /* Droebiti stilebi */
 .just {
   padding: 50px 0; }
@@ -233,7 +242,8 @@ body {
   .services__item {
     background: rgba(255, 241, 230, 0.9);
     padding: 15px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    height: calc(100% - 10px); }
     .services__item-logo {
       font-size: 75px; }
     .services__item-title {
@@ -327,8 +337,21 @@ body {
   .team__title {
     color: #fff1e6; }
   .team__item {
+    height: calc(100% - 10px);
     padding: 15px;
-    background: #fff1e6; }
+    background: #fff1e6;
+    margin-bottom: 10px; }
+    .team__item-name {
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 5px; }
+    .team__item-title {
+      font-size: 12px;
+      font-weight: 100;
+      text-align: center;
+      letter-spacing: 3px;
+      margin-bottom: 15px; }
 
 .footer {
   padding: 30px 0; }
