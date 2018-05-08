@@ -1,3 +1,4 @@
+a:hover{ text-decoration: none; color: inherit}
 body{
   font-family: BPGArial;
   padding-top: 60px;
@@ -373,6 +374,7 @@ body{
 }
 //Contact Section Styles
 .contact{
+  margin-bottom: 50px;
   &__map{
     padding: 0;
     position: relative;
