@@ -13,7 +13,7 @@ body{
   z-index: 999;
   top: 0;
   left: 0;
-  display: flex;
+  @include flexbox();
   align-items: center;
   background: $main-color;
   &__menu{
@@ -32,16 +32,16 @@ body{
 .nav{
   width: 250px;
   height: 100%;
-  display: flex;
+  @include flexbox();
   align-items: center;
   justify-content: flex-end;
   position: fixed;
   top: 0px;
   right: -250px;
-  transition: 300ms linear;
+  @include transition(300ms);
   &.active{
     right: 0;
-    transition: 300ms linear;
+    @include transition(300ms);
     z-index: 3;
   }
 }
@@ -54,11 +54,13 @@ body{
       padding: 15px 20px;
       padding-right: 35px;
       position: relative;
-      transition: 300ms;
+      @include transition(300ms);
       &:after{
         position: absolute;
         right: 0;
         top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
         transform: translateY(-50%);
         content: '';
         display: inline-block;
@@ -67,12 +69,12 @@ body{
         border-radius: 50%;
         background: $main-color;
         box-shadow: 0 0 3px rgba(#000000, 0.4);
-        transition: 300ms;
+        @include transition(300ms);
       }
       &:hover{
         &:after{
           background: #1c7430;
-          transition: 300ms;
+          @include transition(300ms);
         }
       }
     }
@@ -98,6 +100,8 @@ body{
       background: $main-color;
       bottom: -5px;
       left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
       transform: translateX(-50%);
     }
     &:after{
@@ -116,15 +120,17 @@ body{
     height: calc(100% - 60px);
   }
   &__perspective{
-    transition: 300ms linear;
+    @include transition(300ms);
     background: #ffffff;
     &.active{
       width: 100%;
       height: 100%;
       overflow: hidden;
+      -webkit-transform: rotateY(45deg) translatex(-15%);
+      -ms-transform: rotateY(45deg) translatex(-15%);
       transform: rotateY(45deg) translatex(-15%);
       box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.3);
-      transition: 300ms linear;
+      @include transition(300ms);
     }
   }
 }
@@ -148,7 +154,7 @@ body{
   &__content{
     width: 100%;
     height: 100%;
-    display: flex;
+    @include flexbox();
     justify-content: space-between;
     align-items: center;
   }
@@ -162,15 +168,19 @@ body{
     width: 80%;
     min-height: 150px;
     background: rgba($main-color, .8);
-    display: flex;
+    @include flexbox();
     align-items: center;
     color: $text-color;
     text-transform: uppercase;
     padding: 10px 25px;
+    -webkit-transform: skew(-15deg);
+    -ms-transform: skew(-15deg);
     transform: skew(-15deg);
     border-radius: 10px;
     margin-left: 25px;
     h2{
+      -webkit-transform: skew(15deg);
+      -ms-transform: skew(15deg);
       transform: skew(15deg);
       font-size: 25px;
     }
@@ -213,6 +223,8 @@ body{
     top: 0;
   }
   &:before{
+    -webkit-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
     transform: rotateY(180deg);
   }
   &:after{
@@ -230,7 +242,7 @@ body{
     padding: 15px;
     margin-bottom: 10px;
     height: calc(100% - 10px);
-    transition: 300ms;
+    @include transition(300ms);
     &:hover{
       box-shadow: 0 0 25px 3px rgba(0,0,0,.2);
     }
@@ -257,15 +269,19 @@ body{
       top: 0;
       box-shadow: 0 0 3px rgba(0,0,0,.3);
       opacity: 0;
-      transition: 300ms;
+      @include transition(300ms);
     }
     &:hover{
       &:before, &:after{
         opacity: 1;
+        -webkit-transform: rotate(-5deg);
+        -ms-transform: rotate(-5deg);
         transform: rotate(-5deg);
-        transition: 300ms;
+        @include transition(300ms);
       }
       &:after{
+        -webkit-transform: rotate(-3deg);
+        -ms-transform: rotate(-3deg);
         transform: rotate(-3deg);
       }
     }
@@ -278,7 +294,7 @@ body{
     border: 10px solid #ffffff;
     box-shadow: 0 0 3px rgba(0,0,0,.3);
     perspective: 1500px;
-    transition: 300ms;
+    @include transition(300ms);
     cursor: pointer;
     z-index: 3;
     &-img{
@@ -286,15 +302,17 @@ body{
       height: 100%;
       overflow: hidden;
       position: relative;
-      transition: 300ms;
+      @include transition(300ms);
       img{
         width: 100%;
         //min-height: 100%;
         position: absolute;
         top: 50%;
         left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        transition: 300ms;
+        @include transition(300ms);
       }
     }
     &-title{
@@ -305,20 +323,26 @@ body{
       left: 0;
       background: rgba($main-color, .9);
       font-weight: bold;
+      -webkit-transform: rotateX(90deg);
+      -ms-transform: rotateX(90deg);
       transform: rotateX(90deg);
       transform-origin: bottom;
       opacity: 0;
-      transition: 300ms;
+      @include transition(300ms);
     }
     &:hover{
       .gallery__item-title{
+        -webkit-transform: rotateX(0deg);
+        -ms-transform: rotateX(0deg);
         transform: rotateX(0deg);
         opacity: 1;
-        transition: 300ms;
+        @include transition(300ms);
       }
       .gallery__item-img img{
+        -webkit-transform: scale(1.2) translate(-50%, -50%);
+        -ms-transform: scale(1.2) translate(-50%, -50%);
         transform: scale(1.2) translate(-50%, -50%);
-        transition: 300ms;
+        @include transition(300ms);
       }
     }
   }
@@ -341,6 +365,8 @@ body{
     top: 0;
   }
   &:before{
+    -webkit-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
     transform: rotateY(180deg);
   }
   &:after{
@@ -356,7 +382,7 @@ body{
     padding: 15px;
     background: $main-color;
     margin-bottom: 10px;
-    transition: 300ms;
+    @include transition(300ms);
     &-name{
       text-align: center;
       font-size: 18px;
@@ -371,6 +397,8 @@ body{
       margin-bottom: 15px;
     }
     &:hover{
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
       transform: scale(1.1);
       box-shadow: 5px 5px 5px rgba(0,0,0,.3);
     }
@@ -382,7 +410,7 @@ body{
   &__map{
     padding: 0;
     position: relative;
-    transition: 300ms;
+    @include transition(300ms);
     z-index: 999;
     &-embed{
       width: 100%;
@@ -395,11 +423,13 @@ body{
       top: 0;
       left: 0;
       background: rgba(black, .5);
-      transition: 300ms;
+      @include transition(300ms);
     }
     &:hover{
       box-shadow: 0 0 5px 3px rgba(black, 0.3);
       .contact__map-cover{
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
         transform: scale(0);
       }
     }
@@ -407,13 +437,13 @@ body{
   &__item{
     background: #FFFFFF;
     height: 100%;
-    display: flex;
+    @include flexbox();
     align-items: flex-end;
     flex-wrap: wrap;
   }
   &__info{
     width: 100%;
-    display: flex;
+    @include flexbox();
     justify-content: space-between;
     padding: 15px 0;
     margin-bottom: 15px;
@@ -433,7 +463,7 @@ body{
   &__form{
     width: 100%;
     text-align: right;
-    display: flex;
+    @include flexbox();
     flex-wrap: wrap;
     &-group{
       width: 50%;
@@ -466,6 +496,8 @@ body{
     height: 70px;
     position: absolute;
     background: linear-gradient(to bottom right, transparent 50%, #ffffff 51%);
+    -webkit-transform: rotateX(-180deg);
+    -ms-transform: rotateX(-180deg);
     transform: rotateX(-180deg);
     top: 0;
   }
@@ -479,7 +511,7 @@ body{
     }
   }
   &__images{
-    display: flex;
+    @include flexbox();
     justify-content: space-around;
     flex-wrap: wrap;
     &-item{
