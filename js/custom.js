@@ -9,6 +9,7 @@ $(document).ready(function() {
         $(".toggle").toggleClass("active");
         $(".fas.fa-bars").toggleClass("fa-times");
     });
+    //Scroll to ID
     $(document).on('click', 'a[href^="#"]', function(e) {
         var id = $(this).attr('href');
         var $id = $(id);
@@ -30,24 +31,12 @@ $(document).ready(function() {
     //POPUP
     $('.gallery__item').magnificPopup({
         items: [
-            {
-                src: 'images/gallery/1.jpg'
-            },
-            {
-                src: 'images/gallery/2.jpg'
-            },
-            {
-                src: 'images/gallery/3.jpg'
-            },
-            {
-                src: 'images/gallery/4.jpg'
-            },
-            {
-                src: 'images/gallery/5.jpg'
-            },
-            {
-                src: 'images/gallery/6.jpg'
-            },
+            {src: 'images/gallery/1.jpg'},
+            {src: 'images/gallery/2.jpg'},
+            {src: 'images/gallery/3.jpg'},
+            {src: 'images/gallery/4.jpg'},
+            {src: 'images/gallery/5.jpg'},
+            {src: 'images/gallery/6.jpg'},
         ],
         gallery: {
             enabled: true

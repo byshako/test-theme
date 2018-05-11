@@ -35,12 +35,6 @@
   margin: 20px auto;
   text-align: center; }
 
-/* Droebiti stilebi */
-.just {
-  padding: 50px 0; }
-  .just div {
-    margin: 25px 0; }
-
 * {
   margin: 0;
   padding: 0;
@@ -58,7 +52,7 @@ a:hover {
   color: inherit; }
 
 body {
-  font-family: BPGArial;
+  font-family: 'Raleway', sans-serif;
   padding-top: 60px;
   background: #fbfbfb;
   color: #333333; }
@@ -79,6 +73,8 @@ body {
       cursor: pointer;
       display: inline-block;
       padding: 10px; }
+  .header__logo {
+    font-family: 'Courgette', cursive; }
 
 .nav {
   width: 250px;
@@ -125,6 +121,7 @@ body {
   width: 100%;
   padding: 15px 0; }
   .section__title {
+    font-family: 'Courgette', cursive;
     text-align: center;
     text-transform: uppercase;
     color: #333333;
@@ -424,8 +421,55 @@ body {
       display: block; }
 
 .footer {
-  padding: 30px 0; }
+  background: #fff1e6;
+  padding: 30px 0;
+  position: relative;
+  padding-top: 80px; }
+  .footer:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    background: linear-gradient(to bottom right, transparent 50%, #ffffff 51%);
+    transform: rotateX(-180deg);
+    top: 0; }
+  .footer__title {
+    font-family: 'Courgette', cursive; }
+  .footer__list-item {
+    padding: 7px 5px;
+    background: transparent; }
+  .footer__images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    .footer__images-item {
+      width: 30%;
+      margin-bottom: 5px; }
+      .footer__images-item img {
+        width: 100%;
+        height: auto; }
 
+.copy {
+  padding-top: 15px;
+  margin-top: 15px;
+  border-top: 1px solid rgba(0, 0, 0, 0.125); }
+
+@media screen and (max-width: 768px) {
+  .header__logo h1 {
+    font-size: 25px; }
+
+  .home {
+    height: 100vh; }
+    .home__info h2 {
+      font-size: 20px; }
+
+  .contact__form-group {
+    width: 100%;
+    padding: 0; }
+
+  .contact__form-textarea {
+    height: 150px; } }
 /* Button styles */
 
 /*# sourceMappingURL=style.css.map */
