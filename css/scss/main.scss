@@ -411,7 +411,7 @@ body{
     padding: 0;
     position: relative;
     @include transition(300ms);
-    z-index: 999;
+    z-index: 3;
     &-embed{
       width: 100%;
       height: 350px;
